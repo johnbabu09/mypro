@@ -23,7 +23,7 @@ def data_entry(request):
 	frmdate=request.POST.get('fromdate')
 	todate=request.POST.get('todate')
 	obj=Student.objects.filter(student_time=frmdate,student_time=todate)
-	message='frmdate to todate'
+	message='fromdate to todate'
 	return render_to_response(ahshs,'data':obj)
 
 
