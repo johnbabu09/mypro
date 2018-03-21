@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login form</title>
+
+	<style type="text/css">
+		form{
+			background:lightblue;
+			width:500px;
+		}
+		button{
+			color: red;
+		}
+		nav ul{
+				list-style: none;
+				
+		}
+		nav ul li{
+				list-style: none;
+				font-size: 20px;
+				color: skyblue;
+				float:left;
+				padding: 0px 10px 0px 10px;
+		}
+		nav ul li ul li{
+		
+				float: none;
+				padding: 0px;
+				display: none;
+		}
+		nav ul li:hover ul li{
+		-		display: block;
+		}
+	</style>
+</head>
+<body>
+	<form name="form" action="" method="post">{% csrf_token %}
+
+
+	<h2>login form</h2>
+	<p>student_name:</p>
+	
+	<input type="text" name="student_name" placeholder ="enter your student_name">
+	<p>student_id:</p>
+	<input type="text" name="student_id" placeholder ="enter your student_id">
+	<p>student_number:</p>
+	<input type="text" name="student_number" placeholder ="enter your student_number">
+	<p>student_email:</p>
+	<input type="text" name="student_email" placeholder ="enter your student_email"><br>
+	<button>login</button>
+	</form>
+<!--	
+<nav>
+	<ul>
+		<li>home</li>
+		<li>img</li>
+		<li>city
+			<ul>
+				<li>home</li>
+				<li>img</li>
+				<li>city</li>
+				<li>portpholio</li>
+				<li>contact</li>
+			</ul>
+		</li>
+		<li>portpholio</li>
+		<li>contact</li>
+		<li>aboutus</li>
+	</ul>
+
+
+
+
+</nav>-->
+
+
+
+
+
+
+
+
+</body>
+</html>
